@@ -1,0 +1,51 @@
+[
+    {
+      "_id": "t102",
+      "name": "Speed Racer Car",
+      "price": 150,
+      "labels": ["On wheels", "Battery Powered", "Outdoor"],
+      "createdAt": 1631032801011,
+      "inStock": true
+    },
+    {
+      "_id": "t103",
+      "name": "Colorful Puzzle",
+      "price": 95,
+      "labels": ["Puzzle", "Art"],
+      "createdAt": 1631033801011,
+      "inStock": true
+    },
+    {
+      "_id": "t104",
+      "name": "Soft Teddy Bear",
+      "price": 80,
+      "labels": ["Doll", "Baby"],
+      "createdAt": 1631034801011,
+      "inStock": false
+    },
+    {
+      "_id": "t105",
+      "name": "Magnetic Building Blocks",
+      "price": 200,
+      "labels": ["Box game", "Art"],
+      "createdAt": 1631035801011,
+      "inStock": true
+    },
+    {
+      "_id": "t106",
+      "name": "Mini Basketball Hoop",
+      "price": 175,
+      "labels": ["Outdoor", "Baby"],
+      "createdAt": 1631036801011,
+      "inStock": true
+    },
+    {
+      "_id": "t107",
+      "name": "Electric Train Set",
+      "price": 250,
+      "labels": ["On wheels", "Battery Powered"],
+      "createdAt": 1631037801011,
+      "inStock": false
+    }
+  ]
+  
