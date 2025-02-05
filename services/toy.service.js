@@ -7,12 +7,15 @@ export const toyService = {
     query,
     getById,
     remove,
-    save
+    save,
+    getAllToys
 }
 
  const PAGE_SIZE = 6
 const toys = utilService.readJsonFile('data/toy.json')
-
+function getAllToys(){
+    return   Promise.resolve(toys)
+}
 function query(filterBy = {}) {
     
         if (!filterBy.txt) filterBy.txt = ''

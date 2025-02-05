@@ -44,7 +44,7 @@
   {
     "_id": "t109",
     "name": "3D Jigsaw Puzzle",
-    "price": 50,
+    "price": 51,
     "labels": [
       "Puzzle"
     ],
@@ -131,5 +131,17 @@
     ],
     "createdAt": 1631047801011,
     "inStock": true
+  },
+  {
+    "name": "liron toy",
+    "price": 1000,
+    "inStock": false,
+    "labels": [
+      "Box game",
+      "Puzzle",
+      "Battery Powered",
+      "Doll"
+    ],
+    "_id": "hvg5V"
   }
 ]

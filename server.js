@@ -26,6 +26,13 @@ app.use(express.json())
 // Express Routing:
 
 // REST API for toys
+app.get('/api/toy/all',(req,res)=>{
+    toyService.getAllToys()
+                .then(toys=> res.send(toys))
+                .catch(err => res.status(400).send('Cannot get toys') )
+})
+
+
 app.get('/api/toy', (req, res) => {
     console.log(req.query)
     const filterBy = {
