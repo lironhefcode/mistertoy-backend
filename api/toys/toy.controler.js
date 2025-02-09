@@ -63,3 +63,20 @@ export async function removeToy(req,res) {
     }
     
 }
+export async function addToyMsg(req, res) {
+    
+    const { loggedinUser } = req
+    try {
+        const toyId = req.params.id
+        const msg = {
+            txt: req.body.txt,
+            by: loggedinUser,
+            createdAt: Date.now(),
+        }
+        const savedMsg = await toyService.addToyMsg(toyId, msg)
+        res.json(savedMsg)
+    } catch (err) {
+        
+        res.status(500).send({ err: 'Failed to update car' })
+    }
+}

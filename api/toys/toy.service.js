@@ -10,7 +10,8 @@ export const toyService = {
     remove,
     add,
     update,
-    getAllToys
+    getAllToys,
+    addToyMsg
 }
 
  const PAGE_SIZE = 6
@@ -90,7 +91,18 @@ async function add(toy) {
         console.log(err)
     }
 }
+async function addToyMsg(toyId, msg) {
+	try {
+		msg.id = utilService.makeId()
 
+		const collection = await dbService.getCollection('toyDB')
+		await collection.updateOne({ _id: toyId }, { $push: { msgs: msg } })
+		return msg
+	} catch (err) {
+		
+		throw err
+	}
+}
 
 function _saveToysToFile() {
     return new Promise((resolve, reject) => {
