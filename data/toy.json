@@ -13,7 +13,7 @@
   {
     "_id": "t105",
     "name": "Artistic Paint Set",
-    "price": 50,
+    "price": 22,
     "labels": [
       "Art"
     ],
@@ -39,16 +39,6 @@
       "Baby"
     ],
     "createdAt": 1631038801011,
-    "inStock": true
-  },
-  {
-    "_id": "t109",
-    "name": "3D Jigsaw Puzzle",
-    "price": 51,
-    "labels": [
-      "Puzzle"
-    ],
-    "createdAt": 1631039801011,
     "inStock": true
   },
   {
